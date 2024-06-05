@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  
+}
+.main-container
+{
+    display: grid;
+    gap: 20px;
+    padding: 1rem;
+}
+
+.grid-container {
+   display: grid;
+   min-width: 200px;
+   background-color: aliceblue;
+   border-radius: 1rem;
+   box-shadow: 2px 2px 10px gray;
+
+   
+}
+
+.cat-image {
+    width:100% ;
+
+}
+
+.second-div {
+    padding: 10px;
+}
+
+.acc-name {
+   font-weight: bold;
+}
+.sub-grid {
+     margin-top: 10px;
+    display: grid;
+    grid-template-columns:40px 1fr ;
+    column-gap: 10px;
+    align-items: center;
+}
+
+   .profile-pic {
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+   
+   }
+ 
+   .mutual-friends {
+    font-size: small;
+    color: #686161;
+   }
+.button-class {
+    margin: 10px 0px;
+
+}
+
+button {
+    background-color: rgb(12, 73, 171);
+    color: white;
+    padding: 5px 10px;
+    border: blue;
+     border-radius: 3px;
+}
+
+
+
+.container {
+    outline: 2px solid #4b4848;
+    width: min(90% ,75rem);
+    margin: 5rem auto ;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 25% 30% 40%;
+    gap: 1em;
+}
+
+.item {
+    background-color:#8c8181; ;
+    padding: 20px;
+}
+
+@media (min-width: 700px){
+  .main-container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (max-width: 800px){
+  .main-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 500px){
+  .main-container {
+    grid-template-columns: 1fr;
+  }
+}
+
